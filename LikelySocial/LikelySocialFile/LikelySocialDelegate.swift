@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 public protocol LikelySocialDelegate {
-    func likelySocial(didSelected image:LikelyEmojiImage?, selected tag:Int)
+    func likelySocial(didSelected emojiImage:UIImage?, selected tag:Int)
 }

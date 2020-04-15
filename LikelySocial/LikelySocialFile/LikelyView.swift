@@ -2,8 +2,8 @@
 //  LikelyView.swift
 //  Likely
 //
-//  Created by ZerOnes on 17/03/2020.
-//  Copyright © 2020 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 17/03/2020.
+//  Copyright © 2020 Anand Khanpara. All rights reserved.
 //
 
 import Foundation
@@ -13,11 +13,13 @@ class LikelyView: UIView {
     
     var clickLocation = CGPoint()
     var likelySize:LikelySize = .normal
+    var delegate:LikelySocialDelegate?
     private var maxTag = 0
+    private var selectedEmoji:LikelyEmoji?
     
-    init(arrLikelyEmoji arrEmoji:[LikelyEmoji], size likelySize:LikelySize = .normal) {
+    init(arrLikelyEmoji arrEmoji:[LikelyEmoji], size likelySize:LikelySize = .normal, delegate:LikelySocialDelegate? = nil) {
         super.init(frame: CGRect())
-        
+        self.delegate = delegate
         self.likelySize = likelySize
         self.maxTag = arrEmoji.count
         
@@ -106,6 +108,7 @@ class LikelyView: UIView {
             }
             self.layoutIfNeeded()
         }, completion: { _ in
+            self.selectedEmoji = viewEmojo
             if let _ = viewEmojo {
                 self.emojiEndedRemoveAnimation(gesture)
             }else {
@@ -132,6 +135,9 @@ class LikelyView: UIView {
             self.alpha = 0.6
             self.layoutIfNeeded()
         }, completion: { _ in
+            if let emoji = self.selectedEmoji {
+                self.delegate?.likelySocial(didSelected: emoji.image, selected: emoji.indexTag)
+            }
             self.removeFromSuperview()
         })
     }
