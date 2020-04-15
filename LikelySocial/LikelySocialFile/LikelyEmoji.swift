@@ -14,7 +14,7 @@ public final class LikelyEmoji: UIView {
     var indexTag:Int = 0
     var image:UIImage?
     
-    init(image:UIImage? = nil, tag:Int = 0) {
+    public init(image:UIImage? = nil, tag:Int = 0) {
         super.init(frame: CGRect())
         self.clipsToBounds = true
         self.backgroundColor = .red

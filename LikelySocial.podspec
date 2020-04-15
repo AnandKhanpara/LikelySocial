@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LikelySocial"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Add LikelySocial"
   
   spec.description  = <<-DESC
