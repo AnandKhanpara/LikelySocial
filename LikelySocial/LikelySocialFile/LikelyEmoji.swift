@@ -2,8 +2,8 @@
 //  LikelyEmoji.swift
 //  Likely
 //
-//  Created by ZerOnes on 17/03/2020.
-//  Copyright © 2020 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 17/03/2020.
+//  Copyright © 2020 Anand Khanpara. All rights reserved.
 //
 
 import Foundation
@@ -16,7 +16,6 @@ public final class LikelyEmoji: UIView {
     
     init(image:UIImage? = nil, tag:Int = 0) {
         super.init(frame: CGRect())
-        
         self.clipsToBounds = true
         self.backgroundColor = .red
         self.indexTag = tag

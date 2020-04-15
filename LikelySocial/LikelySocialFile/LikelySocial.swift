@@ -2,8 +2,8 @@
 //  LikelySocial.swift
 //  Likely
 //
-//  Created by ZerOnes on 17/03/2020.
-//  Copyright © 2020 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 17/03/2020.
+//  Copyright © 2020 Anand Khanpara. All rights reserved.
 //
 
 import Foundation
@@ -11,8 +11,9 @@ import UIKit
 
 public final class LikelySocial: NSObject {
     
-    public final class func add(emojis arrEmoji:[LikelyEmoji], size likelySize:LikelySize = .normal, superView:UIView, click location:CGPoint? = nil, isScrollAvailableInVertical:Bool = false, isScrollAvailableInHorizontal:Bool = false)  {
-        let likelyView = LikelyView(arrLikelyEmoji: arrEmoji, size: likelySize)
+    public final class func add(emojis arrEmoji:[LikelyEmoji], size likelySize:LikelySize = .normal, delegate:LikelySocialDelegate? = nil, superView:UIView? = nil, click location:CGPoint? = nil, isScrollAvailableInVertical:Bool = false, isScrollAvailableInHorizontal:Bool = false)  {
+        let likelyView = LikelyView(arrLikelyEmoji: arrEmoji, size: likelySize, delegate: delegate)
+        let superView = self.superView(view: superView)
         if let location = location {
             let size = self.likeyViewSize(numberOfEmoji: arrEmoji.count, likelySize: likelySize)
             self.setUpLocation(superView, location, isScrollAvailableInVertical, isScrollAvailableInHorizontal, size) { frame, center in
@@ -27,6 +28,16 @@ public final class LikelySocial: NSObject {
             likelyView.centerXAnchor.constraint(equalTo: superView.centerXAnchor, constant: 0).isActive = true
             likelyView.centerYAnchor.constraint(equalTo: superView.centerYAnchor, constant: 0).isActive = true
         }
+    }
+    
+    class func superView(view:UIView?) -> UIView {
+        var superView = UIView()
+        if let view = view {
+            superView = view
+        }else {
+            superView = UIApplication.shared.windows.first ?? UIView()
+        }
+        return superView
     }
    
     class func likeyViewSize(numberOfEmoji:Int, likelySize:LikelySize) -> CGSize {

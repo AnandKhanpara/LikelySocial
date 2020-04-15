@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84383D6824472F6F00CFC915 /* LikelySocialDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383D6324472F6F00CFC915 /* LikelySocialDelegate.swift */; };
+		84383D6924472F6F00CFC915 /* LikelyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383D6424472F6F00CFC915 /* LikelyView.swift */; };
+		84383D6A24472F6F00CFC915 /* LikelySocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383D6524472F6F00CFC915 /* LikelySocial.swift */; };
+		84383D6B24472F6F00CFC915 /* LikelyEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383D6624472F6F00CFC915 /* LikelyEmoji.swift */; };
+		84383D6C24472F6F00CFC915 /* LikelyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383D6724472F6F00CFC915 /* LikelyExtension.swift */; };
 		86CC30DB2420EDCF005678C6 /* LikelySocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CC30D12420EDCF005678C6 /* LikelySocial.framework */; };
 		86CC30E02420EDCF005678C6 /* LikelySocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC30DF2420EDCF005678C6 /* LikelySocialTests.swift */; };
 		86CC30E22420EDCF005678C6 /* LikelySocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CC30D42420EDCF005678C6 /* LikelySocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86CC30F02420EE47005678C6 /* LikelyEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC30EC2420EE47005678C6 /* LikelyEmoji.swift */; };
-		86CC30F12420EE47005678C6 /* LikelyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC30ED2420EE47005678C6 /* LikelyExtension.swift */; };
-		86CC30F22420EE47005678C6 /* LikelyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC30EE2420EE47005678C6 /* LikelyView.swift */; };
-		86CC30F32420EE47005678C6 /* LikelySocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC30EF2420EE47005678C6 /* LikelySocial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,16 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84383D6324472F6F00CFC915 /* LikelySocialDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelySocialDelegate.swift; sourceTree = "<group>"; };
+		84383D6424472F6F00CFC915 /* LikelyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelyView.swift; sourceTree = "<group>"; };
+		84383D6524472F6F00CFC915 /* LikelySocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelySocial.swift; sourceTree = "<group>"; };
+		84383D6624472F6F00CFC915 /* LikelyEmoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelyEmoji.swift; sourceTree = "<group>"; };
+		84383D6724472F6F00CFC915 /* LikelyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelyExtension.swift; sourceTree = "<group>"; };
 		86CC30D12420EDCF005678C6 /* LikelySocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LikelySocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CC30D42420EDCF005678C6 /* LikelySocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikelySocial.h; sourceTree = "<group>"; };
 		86CC30D52420EDCF005678C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86CC30DA2420EDCF005678C6 /* LikelySocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikelySocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CC30DF2420EDCF005678C6 /* LikelySocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikelySocialTests.swift; sourceTree = "<group>"; };
 		86CC30E12420EDCF005678C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86CC30EC2420EE47005678C6 /* LikelyEmoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelyEmoji.swift; sourceTree = "<group>"; };
-		86CC30ED2420EE47005678C6 /* LikelyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelyExtension.swift; sourceTree = "<group>"; };
-		86CC30EE2420EE47005678C6 /* LikelyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelyView.swift; sourceTree = "<group>"; };
-		86CC30EF2420EE47005678C6 /* LikelySocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikelySocial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +100,11 @@
 		86CC30EB2420EDE0005678C6 /* LikelySocialFile */ = {
 			isa = PBXGroup;
 			children = (
-				86CC30EF2420EE47005678C6 /* LikelySocial.swift */,
-				86CC30EC2420EE47005678C6 /* LikelyEmoji.swift */,
-				86CC30ED2420EE47005678C6 /* LikelyExtension.swift */,
-				86CC30EE2420EE47005678C6 /* LikelyView.swift */,
+				84383D6624472F6F00CFC915 /* LikelyEmoji.swift */,
+				84383D6724472F6F00CFC915 /* LikelyExtension.swift */,
+				84383D6524472F6F00CFC915 /* LikelySocial.swift */,
+				84383D6324472F6F00CFC915 /* LikelySocialDelegate.swift */,
+				84383D6424472F6F00CFC915 /* LikelyView.swift */,
 			);
 			path = LikelySocialFile;
 			sourceTree = "<group>";
@@ -216,10 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CC30F02420EE47005678C6 /* LikelyEmoji.swift in Sources */,
-				86CC30F12420EE47005678C6 /* LikelyExtension.swift in Sources */,
-				86CC30F32420EE47005678C6 /* LikelySocial.swift in Sources */,
-				86CC30F22420EE47005678C6 /* LikelyView.swift in Sources */,
+				84383D6A24472F6F00CFC915 /* LikelySocial.swift in Sources */,
+				84383D6924472F6F00CFC915 /* LikelyView.swift in Sources */,
+				84383D6B24472F6F00CFC915 /* LikelyEmoji.swift in Sources */,
+				84383D6C24472F6F00CFC915 /* LikelyExtension.swift in Sources */,
+				84383D6824472F6F00CFC915 /* LikelySocialDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
